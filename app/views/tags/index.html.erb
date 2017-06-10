@@ -4,4 +4,6 @@
   <% @tags.each do |tag| %>
     <li>- <%= link_to tag.name, tag_path(tag) %> <%= link_to "delete this tag", tag_path(tag), method: :delete %></li>
   <% end %>
+
+  <%= link_to "<< Back to Article List", articles_path %>
 </ul>    
